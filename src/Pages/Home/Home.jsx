@@ -1,4 +1,6 @@
 import Banner from "./Banner";
+import Benefits from "./Benefits";
+
 
 
 const Home = () => {
@@ -6,7 +8,8 @@ const Home = () => {
         <div>
            
             <Banner></Banner>
-            <div className="lg:w-[1200px] mx-auto">
+            <Benefits></Benefits>
+            {/* <div className="lg:w-[1200px] mx-auto">
                 <div className="flex ">
                     <h2 className="lg:text-2xl font-bold">See how Micronet can help you improve your systems & productivity.</h2>
                     <h2 className="text-xl ml-10">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h2>
@@ -23,7 +26,7 @@ const Home = () => {
   </div>
 </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
