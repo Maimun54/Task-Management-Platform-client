@@ -2,13 +2,13 @@
 
 const Benefits = () => {
     return (
-        <section className="w-[1200px] mx-auto px-6">
+        <section className="lg:w-[1200px] mx-auto px-6">
             <div className="py-16">
                 <h2 className="lg:text-4xl text-center font-bold">
                 Who gains advantages from our platform?
                 </h2>
                 <div className="mt-16 border-t border-dashed border-white/50">
-                    <div className="grid grid-cols-3 gap-8 px-6 -mt-4 text-black">
+                    <div className="grid lg:grid-cols-3 md:gird-cols-2 grid-cols-1 gap-8 px-6 -mt-4 text-black">
                         <div className="flex gap-3">
                             
                             <div className="p-6 bg-[#BCECD7] rounded-xl">

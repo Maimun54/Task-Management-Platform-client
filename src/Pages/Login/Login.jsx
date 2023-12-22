@@ -29,7 +29,7 @@ const Login = () => {
       signIn(email,password)
       .then(result=>{
         console.log(result.user)
-        navigate(location?.state? location.state :'/')
+        navigate(location?.state? location.state :'/dashboard')
       })
       .catch(error=>{
         console.error(error)
@@ -44,7 +44,7 @@ const Login = () => {
         <div>
              <div className="text-center">
              <h2 className="text-4xl uppercase font-bold py-3">
-                
+
              </h2>
              <h2 className="text-4xl font-bold py-3">LOGIN NOW</h2>
                 

@@ -2,23 +2,27 @@
 
 
 import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvide";
 
 
 
 const Navbar = () => {
   const {user,loginOut}=useContext(AuthContext)
+  const navigate =useNavigate()
   const handleLogOut=()=>{
     loginOut()
-    .then()
+    .then(
+     navigate('/')
+    )
     .catch()
   }
     const navLinks =<>
          <li><NavLink to="/">Home</NavLink></li>
          
          <li><NavLink to="/myTask">My Task</NavLink></li>
-         <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+         {user && <li><NavLink to="/dashboard">Dashboard</NavLink></li>}
+
          <li><NavLink to="/contact">Contact</NavLink></li>
          <li><NavLink to="/profile">Profile</NavLink></li>
          

@@ -17,7 +17,7 @@ const SocialLogin = () => {
         signInWithPopup(auth,googleProvider)
         .then(result=>{
          console.log(result.user)
-         navigate('/')
+         navigate('/dashboard')
         })
         .catch(error=>{
          console.error(error)
