@@ -124,7 +124,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                   <div className=" text-center text-2xl font-semibold py-2">
-                    <li>{user.displayName}</li>
+                    <li>{user.displayName.split(" ")[0]}</li>
                   </div>
                 </div>
 

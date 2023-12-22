@@ -11,6 +11,7 @@ import Error from "../ErrorPage/Error";
 import Dashboard from "../Layout/Dashboard";
 import PrivateProvider from "../Provider/PrivateProvider";
 import AddTask from "../Pages/AddTask/AddTask";
+import UserDashboard from "../Pages/Dashboard/UserDashboard";
 
 
 const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
        {
         path:"addTask",
         element:<AddTask></AddTask>
+       },
+       {
+        path:"userDashboard",
+        element:<UserDashboard></UserDashboard>
        }
     ]
   }
